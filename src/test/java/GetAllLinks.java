@@ -25,6 +25,7 @@ static WebDriver driver;
             List<WebElement> allLinks = driver.findElements(By.tagName("a"));
             List <String>foEach= links.byForEach(allLinks);
             List <String>lambda= links.byLambda(allLinks);
+              List <String>lambda= links.byStream(allLinks);
         }
             public List<String> byForEach(List<WebElement> allLinks)
             {
